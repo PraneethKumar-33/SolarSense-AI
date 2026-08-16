@@ -75,7 +75,7 @@ city = st.text_input("Enter City Name")
 
 # ---------------- FORECAST GENERATION ---------------- #
 if st.button("Generate Live Forecast"):
-    OPENWEATHER_API_KEY = "d6b14f6fc1d9ff43d4fcd75eddbde602"
+    OPENWEATHER_API_KEY = "YOUR_OPENWEATHER_API_KEY"
     url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={OPENWEATHER_API_KEY}&units=metric"
     
     try:
