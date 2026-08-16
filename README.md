@@ -41,20 +41,6 @@ The goal is to assist in understanding and forecasting solar power generation us
 
 ---
 
-# 🖼️ Application Preview
-
-> **Add screenshots here after uploading them.**
-
-```
-assets/dashboard.png
-
-assets/prediction.png
-
-assets/analytics.png
-```
-
----
-
 # 🛠 Tech Stack
 
 | Category | Technologies |
