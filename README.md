@@ -1,16 +1,13 @@
-<div align="center">
+﻿<div align="center">
 
 # ☀️ SolarSense AI
+### Intelligent Real-Time Solar Forecasting & Generative AI Dashboard
 
-### AI-Powered Solar Energy Forecasting & Analytics Platform
-
-Predict solar power generation using Machine Learning, weather intelligence, and interactive visual analytics.
+Predict solar power generation using Machine Learning, weather intelligence, and conversational AI analytics.
 
 ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
 ![XGBoost](https://img.shields.io/badge/XGBoost-ML-success?style=for-the-badge)
 ![Gemini](https://img.shields.io/badge/Google%20Gemini-Generative%20AI-blue?style=for-the-badge&logo=google)
 
@@ -18,298 +15,99 @@ Predict solar power generation using Machine Learning, weather intelligence, and
 
 ---
 
-# 🌍 About the Project
+## 🌍 About the Project
 
-SolarSense AI is an intelligent Machine Learning application that forecasts solar energy generation using historical plant data and weather information.
+**SolarSense AI** is an intelligent, full-stack Machine Learning application designed to forecast solar energy generation. By combining historical solar plant data with real-time weather API integration, it provides accurate, day-ahead power predictions. 
 
-The platform combines data preprocessing, feature engineering, predictive machine learning models, and an interactive Streamlit dashboard to provide accurate solar power predictions and insightful visual analytics.
-
-The goal is to assist in understanding and forecasting solar power generation using data-driven techniques.
+Beyond predictive modeling, SolarSense AI features a **Generative AI Assistant** powered by Google Gemini, allowing users to query solar data, understand forecasting metrics, and get explainable AI insights interactively.
 
 ---
 
-# ✨ Features
+## ✨ Key Features
 
-- ☀️ Solar Power Prediction
-- 🤖 Machine Learning Forecasting
-- 🌤️ Real-Time Weather Integration
-- 📊 Interactive Dashboard
-- 📈 Historical Trend Analysis
-- ⚡ Advanced Feature Engineering
-- 📉 Model Comparison
-- 🎯 High Accuracy Prediction
-- 📱 Easy-to-use Interface
+- ☀️ **Real-Time Solar Power Prediction:** Forecast AC/DC power output based on live atmospheric conditions.
+- 🤖 **Multiple ML Models:** Compare predictions across Random Forest, Decision Tree, and XGBoost models.
+- 💬 **Generative AI Assistant:** Integrated conversational chatbot powered by Google Gemini 2.5 Flash for natural language querying.
+- 🌤️ **Live Weather Integration:** Dynamically fetches real-time meteorological data via the OpenWeather API.
+- 📊 **Explainable AI (XAI):** Visualizes feature importance and SHAP (SHapley Additive exPlanations) values to interpret model decisions.
+- 📈 **Interactive Dashboard:** Built with Streamlit and Plotly for a seamless, dark-mode visual analytics experience.
 
 ---
 
-# 🛠 Tech Stack
+## 🛠 Tech Stack
 
 | Category | Technologies |
 |-----------|--------------|
-| Programming | Python |
-| ML Libraries | Scikit-Learn, XGBoost |
-| Data Analysis | Pandas, NumPy |
-| Visualization | Matplotlib, Plotly |
-| Frontend | Streamlit |
-| API | OpenWeather API, Google Gemini API |
+| **Programming** | Python 3 |
+| **Machine Learning** | Scikit-Learn, XGBoost, SHAP |
+| **Data Processing** | Pandas, NumPy |
+| **Visualization** | Plotly, Matplotlib |
+| **Frontend/UI** | Streamlit |
+| **APIs / LLMs** | OpenWeather API, Google Gemini API |
 
 ---
 
-# 📂 Project Structure
+## 📂 Project Structure
 
-```text
-SolarSense-AI
-│
-├── app.py
-├── README.md
-├── requirements.txt
-├── .gitignore
-│
-├── app/
-│
-├── src/
-│
-├── notebooks/
-│
-├── data/
-│
-├── outputs/
-│
-└── models/
-```
+\\\	ext
+SolarSense-AI/
+├── app.py                   # Main Streamlit Application (Frontend & AI Assistant)
+├── requirements.txt         # Project Dependencies
+├── .env.example             # Template for Environment Variables
+├── models/                  # Pickled ML Models (.pkl) - Ignored in Git
+├── data/                    # Raw and Processed Datasets
+├── notebooks/               # Jupyter Notebooks for EDA & Model Training
+├── outputs/                 # Exported Graphs and Forecasts
+└── src/                     # Helper scripts and utilities
+\\\
 
 ---
 
-# 🔄 Workflow
+## 🚀 Setup & Installation
 
-```text
-Solar Plant Dataset
-          │
-          ▼
-Data Cleaning
-          │
-          ▼
-Feature Engineering
-          │
-          ▼
-Train-Test Split
-          │
-          ▼
-Machine Learning Models
-          │
-          ▼
-Model Evaluation
-          │
-          ▼
-Solar Power Prediction
-          │
-          ▼
-Interactive Dashboard
-```
+Follow these steps to run the project locally.
 
----
-
-# 🏗 System Architecture
-
-```text
-                +--------------------------+
-                | Historical Solar Dataset |
-                +--------------------------+
-                           │
-                           ▼
-                +--------------------------+
-                | Data Preprocessing       |
-                +--------------------------+
-                           │
-                           ▼
-                +--------------------------+
-                | Feature Engineering      |
-                +--------------------------+
-                           │
-                           ▼
-        +------------------------------------------+
-        | Machine Learning Models                  |
-        |------------------------------------------|
-        | Linear Regression                        |
-        | Decision Tree                            |
-        | Random Forest                            |
-        | XGBoost                                  |
-        +------------------------------------------+
-                           │
-                           ▼
-                +--------------------------+
-                | Weather Information      |
-                +--------------------------+
-                           │
-                           ▼
-                +--------------------------+
-                | Prediction Engine        |
-                +--------------------------+
-                           │
-                           ▼
-                +--------------------------+
-                | Streamlit Dashboard      |
-                +--------------------------+
-```
-
----
-
-# 📊 Dataset
-
-The project uses historical solar plant generation data together with weather sensor measurements.
-
-### Dataset Attributes
-
-- AC Power
-- DC Power
-- Module Temperature
-- Ambient Temperature
-- Irradiation
-- Daily Yield
-- Total Yield
-- Timestamp
-
----
-
-# 🤖 Machine Learning Models
-
-The following regression models were implemented and evaluated.
-
-- Linear Regression
-- Decision Tree Regressor
-- Random Forest Regressor
-- XGBoost Regressor
-
-Evaluation Metrics
-
-- Mean Absolute Error (MAE)
-- Root Mean Squared Error (RMSE)
-- R² Score
-
----
-
-# ⚙ Feature Engineering
-
-Several engineered features were created to improve prediction performance.
-
-- Hour
-- Day
-- Month
-- Day of Week
-- Week of Year
-- Lag Features
-- Rolling Mean
-- Previous AC Power
-- Peak Hour Indicator
-- Temperature Difference
-- Irradiation Efficiency
-
----
-
-# 🌤 Weather Integration
-
-Real-time weather information is obtained using the OpenWeather API.
-
-Parameters used include:
-
-- Temperature
-- Humidity
-- Cloud Cover
-- Weather Conditions
-
----
-
-# 🚀 Installation
-
-Clone the repository
-
-```bash
+### 1. Clone the Repository
+\\\ash
 git clone https://github.com/PraneethKumar-33/SolarSense-AI.git
-```
-
-Go into the project
-
-```bash
 cd SolarSense-AI
-```
+\\\
 
-Install dependencies
-
-```bash
+### 2. Install Dependencies
+Make sure you have Python 3 installed. Install the required packages:
+\\\ash
 pip install -r requirements.txt
-```
+\\\
 
-Run the application
+### 3. Configure Environment Variables
+Create a \.env\ file in the root directory and add your API keys:
+\\\ash
+OPENWEATHER_API_KEY=your_openweather_api_key_here
+GEMINI_API_KEY=your_google_gemini_api_key_here
+\\\
+*(Note: You can get a free OpenWeather API key [here](https://openweathermap.org/api) and a Google Gemini API key [here](https://aistudio.google.com/).)*
 
-```bash
+### 4. Run the Application
+\\\ash
 streamlit run app.py
-```
+\\\
 
 ---
 
-# 🔑 Environment Variables
+## 🏗 System Architecture & Workflow
 
-Create a `.env` file.
-
-```text
-OPENWEATHER_API_KEY=YOUR_OPENWEATHER_API_KEY
-GEMINI_API_KEY=YOUR_GEMINI_API_KEY
-```
-
-The actual API key is intentionally excluded from the repository.
+1. **Data Ingestion:** Historical solar data is cleaned and feature-engineered (lag features, rolling means).
+2. **Model Training:** Regression models (RF, XGBoost, Decision Tree) are trained and serialized using \joblib\.
+3. **Live Inference:** The Streamlit app takes a city name, fetches live weather data, applies the same feature engineering, and feeds it to the pre-trained models.
+4. **AI Generation:** The Gemini LLM acts as an interactive layer on top of the dashboard for contextual Q&A.
 
 ---
 
-# 📈 Future Enhancements
-
-- LSTM-based Deep Learning Forecasting
-- Explainable AI using SHAP
-- Cloud Deployment
-- Live Solar Plant Monitoring
-- Multi-Plant Forecasting
-- Automated Model Retraining
+## 👨‍💻 Author
+**Pamu Praneeth Kumar**  
+B.Tech in Computer Science and Engineering (Artificial Intelligence)  
+🔗 [LinkedIn](https://www.linkedin.com/in/praneeth-kumar-5013aa325/) | 🐙 [GitHub](https://github.com/PraneethKumar-33)
 
 ---
 
-# 📚 Learning Outcomes
-
-This project strengthened practical knowledge in:
-
-- Data Cleaning
-- Feature Engineering
-- Machine Learning
-- Hyperparameter Tuning
-- Model Evaluation
-- Streamlit Development
-- API Integration
-- Git & GitHub
-
----
-
-# 👨‍💻 Author
-
-## Pamu Praneeth Kumar
-
-Computer Science and Engineering (Artificial Intelligence)
-
-**GitHub**
-
-https://github.com/PraneethKumar-33
-
-**LinkedIn**
-
-https://www.linkedin.com/in/praneeth-kumar-5013aa325/
-
----
-
-# ⭐ If you like this project
-
-Please consider giving it a **Star ⭐** on GitHub.
-
-It motivates further improvements and supports the project.
-
----
-
-# 📄 License
-
-This project is intended for educational and research purposes.
+⭐ *If you found this project helpful, please consider giving it a Star!*

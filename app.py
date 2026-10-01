@@ -7,6 +7,8 @@ import plotly.express as px
 import shap
 import google.generativeai as genai
 import os
+from dotenv import load_dotenv
+load_dotenv()
 
 # ---------------- PAGE CONFIG ---------------- #
 st.set_page_config(
@@ -75,7 +77,7 @@ city = st.text_input("Enter City Name")
 
 # ---------------- FORECAST GENERATION ---------------- #
 if st.button("Generate Live Forecast"):
-    OPENWEATHER_API_KEY = "YOUR_OPENWEATHER_API_KEY"
+    OPENWEATHER_API_KEY = os.getenv("OPENWEATHER_API_KEY", "YOUR_OPENWEATHER_API_KEY")
     url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={OPENWEATHER_API_KEY}&units=metric"
     
     try:
