@@ -12,6 +12,7 @@ Predict solar power generation using Machine Learning, weather intelligence, and
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
 ![XGBoost](https://img.shields.io/badge/XGBoost-ML-success?style=for-the-badge)
+![Gemini](https://img.shields.io/badge/Google%20Gemini-Generative%20AI-blue?style=for-the-badge&logo=google)
 
 </div>
 
@@ -50,7 +51,7 @@ The goal is to assist in understanding and forecasting solar power generation us
 | Data Analysis | Pandas, NumPy |
 | Visualization | Matplotlib, Plotly |
 | Frontend | Streamlit |
-| API | OpenWeather API |
+| API | OpenWeather API, Google Gemini API |
 
 ---
 
@@ -252,6 +253,7 @@ Create a `.env` file.
 
 ```text
 OPENWEATHER_API_KEY=YOUR_OPENWEATHER_API_KEY
+GEMINI_API_KEY=YOUR_GEMINI_API_KEY
 ```
 
 The actual API key is intentionally excluded from the repository.

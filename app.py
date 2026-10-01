@@ -16,7 +16,7 @@ st.set_page_config(
 
 # ---------------- GEMINI CLIENT ---------------- #
 # PASTE YOUR NEWLY GENERATED API KEY HERE:
-API_KEY = os.getenv("OPENWEATHER_API_KEY")
+API_KEY = os.getenv("GEMINI_API_KEY")
 genai.configure(api_key=API_KEY)
 gemini_model = genai.GenerativeModel("gemini-2.5-flash")
 # ---------------- INITIALIZE SESSION STATE ---------------- #
