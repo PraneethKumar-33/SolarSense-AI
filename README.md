@@ -1,4 +1,4 @@
-﻿<div align="center">
+<div align="center">
 
 # ☀️ SolarSense AI
 ### Intelligent Real-Time Solar Forecasting & Generative AI Dashboard
@@ -49,7 +49,7 @@ Beyond predictive modeling, SolarSense AI features a **Generative AI Assistant**
 
 ## 📂 Project Structure
 
-\\\	ext
+```text
 SolarSense-AI/
 ├── app.py                   # Main Streamlit Application (Frontend & AI Assistant)
 ├── requirements.txt         # Project Dependencies
@@ -59,7 +59,7 @@ SolarSense-AI/
 ├── notebooks/               # Jupyter Notebooks for EDA & Model Training
 ├── outputs/                 # Exported Graphs and Forecasts
 └── src/                     # Helper scripts and utilities
-\\\
+```
 
 ---
 
@@ -68,36 +68,36 @@ SolarSense-AI/
 Follow these steps to run the project locally.
 
 ### 1. Clone the Repository
-\\\ash
+```bash
 git clone https://github.com/PraneethKumar-33/SolarSense-AI.git
 cd SolarSense-AI
-\\\
+```
 
 ### 2. Install Dependencies
 Make sure you have Python 3 installed. Install the required packages:
-\\\ash
+```bash
 pip install -r requirements.txt
-\\\
+```
 
 ### 3. Configure Environment Variables
-Create a \.env\ file in the root directory and add your API keys:
-\\\ash
+Create a `.env` file in the root directory and add your API keys:
+```bash
 OPENWEATHER_API_KEY=your_openweather_api_key_here
 GEMINI_API_KEY=your_google_gemini_api_key_here
-\\\
+```
 *(Note: You can get a free OpenWeather API key [here](https://openweathermap.org/api) and a Google Gemini API key [here](https://aistudio.google.com/).)*
 
 ### 4. Run the Application
-\\\ash
+```bash
 streamlit run app.py
-\\\
+```
 
 ---
 
 ## 🏗 System Architecture & Workflow
 
 1. **Data Ingestion:** Historical solar data is cleaned and feature-engineered (lag features, rolling means).
-2. **Model Training:** Regression models (RF, XGBoost, Decision Tree) are trained and serialized using \joblib\.
+2. **Model Training:** Regression models (RF, XGBoost, Decision Tree) are trained and serialized using `joblib`.
 3. **Live Inference:** The Streamlit app takes a city name, fetches live weather data, applies the same feature engineering, and feeds it to the pre-trained models.
 4. **AI Generation:** The Gemini LLM acts as an interactive layer on top of the dashboard for contextual Q&A.
 
